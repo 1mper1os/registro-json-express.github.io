@@ -1,0 +1,38 @@
+[
+  {
+    "nombre": "Juan",
+    "apellido": "Pérez",
+    "cedula": "12345678",
+    "email": "juan@example.com",
+    "telefono": "555-1234",
+    "direccion": "Calle 1",
+    "fecha": "1990-01-01"
+  },
+  {
+    "nombre": "Ana",
+    "apellido": "Gómez",
+    "cedula": "87654321",
+    "email": "ana@example.com",
+    "telefono": "555-5678",
+    "direccion": "Calle 2",
+    "fecha": "1992-02-02"
+  },
+  {
+    "nombre": "Luis",
+    "apellido": "Martínez",
+    "cedula": "13579246",
+    "email": "luis@example.com",
+    "telefono": "555-9012",
+    "direccion": "Calle 3",
+    "fecha": "1994-03-03"
+  },
+  {
+    "nombre": "david ",
+    "apellido": "renzo",
+    "cedula": "7323948029",
+    "email": "david@gmail.com",
+    "telefono": "9327323832",
+    "direccion": "Av. santiago N 20",
+    "fecha": "2000-02-25"
+  }
+]

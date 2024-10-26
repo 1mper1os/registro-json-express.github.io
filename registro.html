@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>Registro de Usuarios</title>
+</head>
+
+<body class="bg-gray-100">
+  <nav class="bg-gray-800 text-white p-4">
+    <ul class="flex space-x-4">
+      <li><a href="index.html" class="hover:underline">Inicio</a></li>
+      <li><a href="registro.html" class="hover:underline">Registro</a></li>
+    </ul>
+  </nav>
+
+  <div class="max-w-4xl mx-auto p-6">
+    <h2 class="text-2xl font-bold mb-4">Registro de Usuario</h2>
+    <form id="registroForm" class="bg-white p-6 rounded shadow">
+      <label for="nombre" class="block mb-2">Nombre:</label>
+      <input type="text" id="nombre" required class="border rounded w-full p-2 mb-4">
+
+      <label for="apellido" class="block mb-2">Apellido:</label>
+      <input type="text" id="apellido" required class="border rounded w-full p-2 mb-4">
+
+      <label for="cedula" class="block mb-2">Cédula:</label>
+      <input type="text" id="cedula" required pattern="\d+" title="Solo números" class="border rounded w-full p-2 mb-4">
+
+      <label for="email" class="block mb-2">Email:</label>
+      <input type="email" id="email" required class="border rounded w-full p-2 mb-4">
+
+      <label for="telefono" class="block mb-2">Teléfono:</label>
+      <input type="text" id="telefono" required class="border rounded w-full p-2 mb-4">
+
+      <label for="direccion" class="block mb-2">Dirección:</label>
+      <input type="text" id="direccion" required class="border rounded w-full p-2 mb-4">
+
+      <label for="fecha" class="block mb-2">Fecha de Nacimiento:</label>
+      <input type="date" id="fecha" required class="border rounded w-full p-2 mb-4">
+
+      <button type="submit" class="bg-blue-500 text-white p-2 rounded">Registrar</button>
+    </form>
+
+    <button id="listarBtn" class="mt-4 bg-green-500 text-white p-2 rounded">Listar Usuarios</button>
+
+    <table id="usuariosTable" class="mt-6 w-full bg-white border-collapse rounded shadow">
+      <thead>
+        <tr class="bg-gray-200">
+          <th class="border px-4 py-2">Nombre</th>
+          <th class="border px-4 py-2">Apellido</th>
+          <th class="border px-4 py-2">Cédula</th>
+          <th class="border px-4 py-2">Email</th>
+          <th class="border px-4 py-2">Teléfono</th>
+          <th class="border px-4 py-2">Dirección</th>
+          <th class="border px-4 py-2">Fecha de Nacimiento</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+
+  <footer class="text-center py-4">
+    <p>© 2024 Mi Sitio Web</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
